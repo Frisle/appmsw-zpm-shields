@@ -29,6 +29,7 @@ ClassMethod Test(parameter) As %Status
 	for { set i=$o(%request.Data(i)) quit:i=""
 		set:$o(%request.Data(i,""),-1)'="" Par("%request.Data",i)=$g(%request.Data(i,$o(%request.Data(i,""),-1)))
 	}
+	write !,parameter,!
 	zw Par
 	zw %response
 	&html<</pre>>

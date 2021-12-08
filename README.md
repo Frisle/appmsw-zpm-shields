@@ -4,14 +4,16 @@
 [![DC](https://img.shields.io/badge/Available%20article%20on-Intersystems%20Community-orange)](https://community.intersystems.com/post/deploying-solutions-without-source-code-zpm)
 [![GitHub all releases](https://img.shields.io/badge/Available%20on-GitHub-black)](https://github.com/SergeyMi37/appmsw-zpm-shields)
  
- [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=sergeymi37%2Fappmsw-zpm-shields&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=sergeymi37%2Fappmsw-zpm-shields)
+ [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fappmsw-zpm-shields&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fappmsw-zpm-shields)
  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/SergeyMi37/appmsw-zpm-shields">
  [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- [![](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
-   
+ [![Repo](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-zpm-shields&color=gold)
+ [![Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/registry/mode?project=zpm-shields&color=F4A460)
+ [![Repo+Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
+
  
-You can ...
+ Service for displaying version numbers of ZPM and OEX registry in badges
 
 ## Installation with ZPM
 
@@ -51,4 +53,14 @@ docker-compose up -d
 ```
 docker-compose exec iris iris session iris
 ```
+
+/// Search numbers versions ZPM and OEX registry
+/// http://localhost:52773/zpm-shields/repo/mode?module=https:%2F%2Fgithub.com%2FSergeyMi37%2Fzapm&color=blue&debug=1
+/// http://localhost:52773/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-dbdeploy&color=gold
+
+/// http://localhost:52773/zpm-shields/registry/mode?project=appmsw-dbdeploy&color=gold
+/// http://localhost:52773/zpm-shields/registry/mode?project=https:%2F%2Fpm.community.intersystems.com%2Fpackages%2Fzapm%2F&color=gold
+
+/// http://localhost:52773/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-dbdeploy&project=appmsw-dbdeploy&color=gold
+/// http://iris-test:52773/zpm-shields/both/mode?module=rcemper%2Fzpmshow&project=zpmshow
 
