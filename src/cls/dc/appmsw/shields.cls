@@ -57,16 +57,16 @@ ClassMethod GetZpmVersion(input = "") As %Status
 	if %request.URL["/repo/" {	
 		if '$Data(Par("%request.Data","module"),module) quit $select('$get(debug):$$$OK,1:$$$ERROR($$$GeneralError,"no parameter module"))
 		set st=..GetModule(module,.res)
-		if 'st quit:'$get(debug) $$$OK write  quit st
-		set title=" Repository: "_$GET(res("zpmname"))
-		set vers=$GET(res("ver"))
+		if 'st set Par("%request.Data","color")="red"
+		set title=" Repository: "_$GET(res("zpmname"),module)
+		set vers=$GET(res("ver"),"none")
 	}
 	elseif %request.URL["/registry/" { 
 		if '$Data(Par("%request.Data","project"),project) quit $select('$get(debug):$$$OK,1:$$$ERROR($$$GeneralError,"no parameter project"))
 		set st=..GetReg(project,.res)
-		if 'st quit:'$get(debug) $$$OK write  quit st
-		set title=" Registry: "_$GET(res("zpmname"))
-		set vers=$GET(res("ver"))
+		if 'st set Par("%request.Data","color")="red"
+		set title=" Registry: "_$GET(res("zpmname"),project)
+		set vers=$GET(res("ver"),"none")
 	}
 	elseif %request.URL["/both/" { 
 		if '$Data(Par("%request.Data","module"),module) quit $select('$get(debug):$$$OK,1:$$$ERROR($$$GeneralError,"no parameter module"))
@@ -76,8 +76,8 @@ ClassMethod GetZpmVersion(input = "") As %Status
 
 		if '$Data(Par("%request.Data","project"),project) quit $select('$get(debug):$$$OK,1:$$$ERROR($$$GeneralError,"no parameter project"))
 		set st=..GetReg(project,.res2)
-		if 'st quit:'$get(debug) $$$OK write  quit st
-		set vers=" Registry: "_$GET(res2("zpmname"))_" v."_$GET(res2("ver"))
+		if 'st set Par("%request.Data","color")="red"
+		set vers=" Registry: "_$GET(res2("zpmname"),project)_" v."_$GET(res2("ver"),"none")
 	}
 
 	if $Data(Par("%request.Data","color"),color)

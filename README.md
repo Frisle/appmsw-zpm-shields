@@ -1,19 +1,14 @@
-![](https://raw.githubusercontent.com/SergeyMi37/appmsw-zpm-shields/master/doc/Screenshot_1.png)
+ ![Repo](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-zpm-shields&color=gold)
+ ![Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/registry/mode?project=zpm-shields&color=F4A460)
+ 
+ ![Repo+Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
 ## zpm-shields
-[![Gitter](https://img.shields.io/badge/Available%20on-Intersystems%20Open%20Exchange-00b2a9.svg)](https://openexchange.intersystems.com/package/appmsw-zpm-shields)
-[![DC](https://img.shields.io/badge/Available%20article%20on-Intersystems%20Community-orange)](https://community.intersystems.com/post/deploying-solutions-without-source-code-zpm)
-[![GitHub all releases](https://img.shields.io/badge/Available%20on-GitHub-black)](https://github.com/SergeyMi37/appmsw-zpm-shields)
  
  [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fappmsw-zpm-shields&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fappmsw-zpm-shields)
  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/SergeyMi37/appmsw-zpm-shields">
- [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
- ![Repo](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-zpm-shields&color=gold)
- ![Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/registry/mode?project=zpm-shields&color=F4A460)
- ![Repo+Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
-
  
- Service for displaying version numbers of ZPM and OEX registry in badges
+ Service for displaying version numbers of ZPM and OEX registry in badges.
+ I always wanted to know what version of the project is in the repository without looking at the module file. Hml and how it relates to the public repository version. Is it time to update the release or not?
 
 ## Installation with ZPM
 
@@ -49,18 +44,16 @@ docker-compose build
 docker-compose up -d
 ```
 
-## 
+## Using these links you can get a svg file that can be inserted into README.MD
 ```
-docker-compose exec iris iris session iris
+![Repo](http://localhost:52773/zpm-shields/repo/mode?module=https:%2F%2Fgithub.com%2FSergeyMi37%2Fzapm&color=blue)
 ```
-
-/// Search numbers versions ZPM and OEX registry
-/// http://localhost:52773/zpm-shields/repo/mode?module=https:%2F%2Fgithub.com%2FSergeyMi37%2Fzapm&color=blue&debug=1
-/// http://localhost:52773/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-dbdeploy&color=gold
-
-/// http://localhost:52773/zpm-shields/registry/mode?project=appmsw-dbdeploy&color=gold
-/// http://localhost:52773/zpm-shields/registry/mode?project=https:%2F%2Fpm.community.intersystems.com%2Fpackages%2Fzapm%2F&color=gold
-
-/// http://localhost:52773/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-dbdeploy&project=appmsw-dbdeploy&color=gold
-/// http://iris-test:52773/zpm-shields/both/mode?module=rcemper%2Fzpmshow&project=zpmshow
-
+![](https://raw.githubusercontent.com/SergeyMi37/appmsw-zpm-shields/master/doc/Screenshot_1.png)
+```
+![Registry](http://localhost:52773/zpm-shields/registry/mode?project=appmsw-dbdeploy&color=gold)
+```
+![](https://raw.githubusercontent.com/SergeyMi37/appmsw-zpm-shields/master/doc/Screenshot_2.png)
+```
+![Repo+Registry](http://localhost:52773/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-dbdeploy&project=appmsw-dbdeploy&color=FFA07A)
+```
+![](https://raw.githubusercontent.com/SergeyMi37/appmsw-zpm-shields/master/doc/Screenshot_2.png)
