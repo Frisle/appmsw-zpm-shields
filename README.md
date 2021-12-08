@@ -43,7 +43,7 @@ docker-compose build
 ```
 docker-compose up -d
 ```
-
+## After installation, you will have a rest service `zpm-shields`
 ## Using these links you can get a svg file that can be inserted into README.MD
 ```
 ![Repo](http://localhost:52773/zpm-shields/repo/mode?module=https:%2F%2Fgithub.com%2FSergeyMi37%2Fzapm&color=blue)
@@ -56,4 +56,6 @@ docker-compose up -d
 ```
 ![Repo+Registry](http://localhost:52773/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-dbdeploy&project=appmsw-dbdeploy&color=FFA07A)
 ```
-![](https://raw.githubusercontent.com/SergeyMi37/appmsw-zpm-shields/master/doc/Screenshot_2.png)
+![](https://raw.githubusercontent.com/SergeyMi37/appmsw-zpm-shields/master/doc/Screenshot_3.png)
+
+## You can forward your local address outside with the [`ngrok`](https://ngrok.com/) utility.
