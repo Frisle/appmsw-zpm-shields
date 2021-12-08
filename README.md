@@ -8,9 +8,9 @@
  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/SergeyMi37/appmsw-zpm-shields">
  [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- [![Repo](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-zpm-shields&color=gold)
- [![Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/registry/mode?project=zpm-shields&color=F4A460)
- [![Repo+Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
+ ![Repo](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-zpm-shields&color=gold)
+ ![Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/registry/mode?project=zpm-shields&color=F4A460)
+ ![Repo+Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
 
  
  Service for displaying version numbers of ZPM and OEX registry in badges
