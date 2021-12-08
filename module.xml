@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-<Document name="appmsw-zpm-shields.ZPM">
+<Document name="zpm-shields.ZPM">
 <Module>
-<Name>appmsw-zpm-shields</Name>
+<Name>zpm-shields</Name>
 <Version>1.0.0</Version>
 <Description>An exsample zpm-shields.</Description>
 <Packaging>module</Packaging>
@@ -19,10 +19,10 @@ description:
 </Notes>
 </Author>
 <SourcesRoot>src</SourcesRoot> 
-<Resource Name="appmsw.rest.PKG"/> 
+<Resource Name="dc.appmsw.shields.CLS"/> 
+<CSPApplication CookiePath="/zpm-shields/" DefaultTimeout="900" DispatchClass="dc.appmsw.shields" MatchRoles=":%DB_IRISSYS" PasswordAuthEnabled="1" Recurse="1" ServeFiles="1" ServeFilesTimeout="3600" UnauthenticatedEnabled="0" Url="/zpm-shields" UseSessionCookie="2"/>
 <AfterInstallMessage>
-You can protect your solution by deleting the source code. Create an archive for database deployment and move it outside the container.
-&#13;In a new instance, you can create a database from the archive with a new name.
+You can load description:
 &#13;https://github.com/SergeyMi37/appmsw-zpm-shields/blob/master/README.md
 </AfterInstallMessage>
 </Module>
