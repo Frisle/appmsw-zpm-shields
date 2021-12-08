@@ -43,7 +43,7 @@ docker-compose build
 ```
 docker-compose up -d
 ```
-## After installation, you will have a rest service `zpm-shields`
+## After installation, you will have a service to which you need to provide access without a password.
 ## Using these links you can get a svg file that can be inserted into README.MD
 ```
 ![Repo](http://localhost:52773/zpm-shields/repo/mode?module=https:%2F%2Fgithub.com%2FSergeyMi37%2Fzapm&color=blue)
