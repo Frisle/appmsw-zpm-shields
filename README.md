@@ -18,7 +18,7 @@ set $namespace="%SYS", name="DefaultSSL" do:'##class(Security.SSLConfigs).Exists
 ```
 If ZPM is installed, then `appmsw-dbdeploy` can be set with the command
 ```
-zpm:USER>install appmsw-dbdeploy
+zpm:USER>install zpm-shields
 ```
 ## Installation with Docker
 
