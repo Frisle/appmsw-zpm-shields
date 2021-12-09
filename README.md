@@ -8,8 +8,9 @@
  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/SergeyMi37/appmsw-zpm-shields">
  
  Service for displaying version numbers of ZPM and OEX registry in badges.
- I always wanted to know what version of the project is in the repository without looking at the module file. Hml and how it relates to the public repository version. Is it time to update the release or not?
-
+ I always wanted to know what version of the project is in the repository without looking at the module.xmp and how it relates to the public repository version. Is it time to update the release or not?
+ For public services GitHub.com and pm.community.intersystems.com, you can use [shields.io](https://shields.io/) service. And for private local networks, you can use my project `zpm-shields`.
+ 
 ## Installation with ZPM
 
 If ZPM the current instance is not installed, then in one line you can install the latest version of ZPM.
