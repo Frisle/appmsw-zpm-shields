@@ -16,7 +16,7 @@ If ZPM the current instance is not installed, then in one line you can install t
 ```
 zn "%SYS" d ##class(Security.SSLConfigs).Create("z") s r=##class(%Net.HttpRequest).%New(),r.Server="pm.community.intersystems.com",r.SSLConfiguration="z" d r.Get("/packages/zpm/latest/installer"),$system.OBJ.LoadStream(r.HttpResponse.Data,"c")
 ```
-If ZPM is installed, then `appmsw-dbdeploy` can be set with the command
+If ZPM is installed, then `zpm-shields` can be set with the command
 ```
 zpm:USER>install zpm-shields
 ```
