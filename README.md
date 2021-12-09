@@ -1,8 +1,8 @@
- ![Repo](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-zpm-shields&color=gold)
- ![Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/registry/mode?project=zpm-shields&color=F4A460)
+ ![Repo-GitHub](https://img.shields.io/badge/dynamic/xml?color=gold&label=GitHub&prefix=ver.&query=%2F%2FVersion&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsergeymi37%2Fappmsw-zpm-shields%2Fmaster%2Fmodule.xml)
  
- ![Repo+Registry](https://ee2c-109-252-71-113.ngrok.io/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-zpm-shields&project=zpm-shields)
-## zpm-shields
+ ![OEX-zapm](https://img.shields.io/badge/dynamic/json?url=https:%2F%2Fpm.community.intersystems.com%2Fpackages%2Fzpm-shields%2F&label=ZPM-pm.community.intersystems.com&query=$.version&color=green&prefix=zpm-shields+)
+ 
+ # zpm-shields
  
  [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Fappmsw-zpm-shields&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Fappmsw-zpm-shields)
  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/SergeyMi37/appmsw-zpm-shields">

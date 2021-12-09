@@ -2,6 +2,10 @@
 /// [![RepoZPM](http://hostserver/zpm-shields/repo/mode?module=sergeymi37%2Fappmsw-dbdeploy&color=gold)
 /// [![RegZPM](http://hostserver/zpm-shields/both/mode?module=sergeymi37%2Fappmsw-dbdeploy&project=appmsw-dbdeploy&color=gold)
 /// [![Repo+RegZPM](http://hostserver/zpm-shields/both/mode?module=rcemper%2Fzpmshow&project=zpmshow)
+/// 
+/// ![Repo-GitLab](https://img.shields.io/badge/dynamic/xml?color=gold&label=GitLab&prefix=test ver.&query=%2F%2FVersion&url=https%3A%2F%2Fgitlab.com%2Fsergeymi%2Ftest%2F-%2Fraw%2Fmaster%2Fmodule.xml)
+/// ![OEX-zapm](https://img.shields.io/badge/dynamic/json?url=https:%2F%2Fpm.community.intersystems.com%2Fpackages%2Fzapm%2F&label=ZPM-pm.community.intersystems.com&query=$.version&color=green&prefix=zapm+)
+/// ![Repo-GitHub](https://img.shields.io/badge/dynamic/xml?color=gold&label=GitHub&prefix=ver.&query=%2F%2FVersion&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsergeymi37%2Fzapm%2Fmaster%2Fmodule.xml)
 Class dc.appmsw.shields Extends %CSP.REST
 {
 
@@ -120,7 +124,6 @@ ClassMethod GetZpmVersion(input = "") As %Status
 ClassMethod GetModule(project As %String, ByRef result) As %Status
 {
 	if project'="" {
-		;(https://raw.githubusercontent.com/SergeyMi37/appmsw-dbdeploy/master/doc/Screenshot_4.png)
 		set url=project
 		if project'["http" { //default on github
 			set url="https://raw.githubusercontent.com/"_project_"/master/module.xml"
@@ -139,7 +142,6 @@ ClassMethod GetModule(project As %String, ByRef result) As %Status
 		//write url
 		set st=##class(dc.appmsw.shields).GetHttp(url,.out)
 		quit:'st st
-
 		if ..Stream2String($Get(out("content")),.module) {
 			set module=$zconvert(module,"L")
 			set result("ver")=$p($p(module,"<version>",2),"</version>",1)
@@ -317,4 +319,3 @@ XData ShieldsSvg
 }
 
 }
-
