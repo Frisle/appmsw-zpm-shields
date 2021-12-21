@@ -1,4 +1,4 @@
- ![Repo-GitHub](https://img.shields.io/badge/dynamic/xml?color=gold&label=GitHub&prefix=ver.&query=%2F%2FVersion&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsergeymi37%2Fappmsw-zpm-shields%2Fmaster%2Fmodule.xml)
+ ![Repo-GitHub](https://img.shields.io/badge/dynamic/xml?color=gold&label=GitHub%20module.xml&prefix=ver.&query=%2F%2FVersion&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsergeymi37%2Fappmsw-zpm-shields%2Fmaster%2Fmodule.xml)
  
  ![OEX-zapm](https://img.shields.io/badge/dynamic/json?url=https:%2F%2Fpm.community.intersystems.com%2Fpackages%2Fzpm-shields%2F&label=ZPM-pm.community.intersystems.com&query=$.version&color=green&prefix=zpm-shields+)
  
